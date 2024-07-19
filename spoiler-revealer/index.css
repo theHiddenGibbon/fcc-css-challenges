@@ -1,0 +1,30 @@
+:root {
+  --font-color: black;
+  --background-color: lightgrey;
+}
+
+p {
+  line-height: 1.5em;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--font-color);
+  cursor: default;
+} 
+
+.post {
+  background: var(--background-color);
+  border-radius: 1em;
+  padding: 1em;
+  margin: 1em;
+
+}
+
+.spoiler {
+  background: var(--font-color);
+  transition: all 0.5s ease-in;
+}
+
+.spoiler:hover {
+  background: initial;
+  color: initial;
+}
