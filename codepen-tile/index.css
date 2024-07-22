@@ -1,0 +1,87 @@
+:root {
+  --font-main: 'Noto Sans', sans-serif;
+  --bg-main: #131417;
+  --bg-card: #1e1f26;
+  --bg-stats: #131417;
+  --username: #b7bbc8;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-main);
+  font-family: var(--font-main);
+  color: white;
+}
+
+.card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  min-width: 240px;
+  background-color: var(--bg-card);
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+.card-thumbnail {
+  display: flex;
+}
+
+.card-thumbnail img {
+  border-radius: 15px;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.card-avatar {
+  display: flex;
+}
+
+.card-avatar img {
+  border-radius: 5px;
+  width: 100px;
+}
+
+.card-details {
+  line-height: 1.6;
+}
+
+.card-details p {
+  color: var(--username);
+}
+
+.card-details h3, .card-details p {
+  padding: 0;
+  margin: 0;
+}
+
+.card-stats {
+  display: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-stats li {
+  background-color: var(--bg-stats);
+  list-style: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.card:hover .card-stats {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top: 20px;
+}
+
