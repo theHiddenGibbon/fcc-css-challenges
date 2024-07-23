@@ -1,0 +1,36 @@
+:root {
+  --color-light: lightgray;
+  --color-dark: darkgray;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  animation: bulge 1s alternate infinite;
+}
+
+@keyframes bulge {
+  from  {
+    background-color: var(--color-dark);
+    transform: scale(0.85);
+  }
+
+  to {
+    background-color: var(--color-light);
+  }
+}
