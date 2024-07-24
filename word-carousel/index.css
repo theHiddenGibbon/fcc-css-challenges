@@ -1,0 +1,44 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-word: #5134ff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1:after {
+  background-color: var(--bg-word);
+  color: white;
+  padding: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  animation: word-swap 8s infinite;
+  content: "";
+}
+
+@keyframes word-swap {
+  0% {
+    content: "gibbons";
+  }
+  25% {
+    content: "burritos"
+  }
+  50% {
+    content: "CSS"
+  }
+  75% {
+    content: "sleeping";
+  }
+  100% {
+    content: "gibbons";
+  }
+}
