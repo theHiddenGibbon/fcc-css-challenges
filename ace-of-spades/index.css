@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+:root {
+  --card-height: 200px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 10px;;
+  display: flex;
+}
+
+.card > * {
+  flex-direction: column;
+  font-size: 30px;
+  align-items: center;
+  padding: 15px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  font-size: 120px;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.bottom {
+  transform: rotate(180deg);
+}
+
+.top > div,
+.bottom > div {
+  line-height: 0.75;
+}
+
+.top div:first-child,
+.bottom div:first-child {
+  font-size: 25px;
+}
