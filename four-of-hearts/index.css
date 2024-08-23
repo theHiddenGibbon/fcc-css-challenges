@@ -7,10 +7,7 @@ html, body {
   padding: 0;
   height: 100vh;
   font-family: sans-serif;
-}
-
-:root {
-  --card-height: 200px;
+  color: red;
 }
 
 .container {
@@ -26,33 +23,36 @@ html, body {
   border: 2px solid black;
   border-radius: 10px;
   display: flex;
-}
-
-.card > * {
-  flex-direction: column;
-  font-size: 30px;
-  align-items: center;
   padding: 15px;
+  font-size: 30px;
 }
 
-.center {
+.middle {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  font-size: 70px;
+}
+
+.middle div {
   display: flex;
   justify-content: center;
-  font-size: 120px;
-  padding: 0;
-  flex-grow: 1;
+  align-items: center;
 }
 
-.bottom {
+.right,
+.middle div:nth-child(n+3) {
   transform: rotate(180deg);
 }
 
-.top > div,
-.bottom > div {
+.left > div,
+.right > div {
+  display: flex;
+  justify-content: center;
   line-height: 0.75;
 }
 
-.top div:first-child,
-.bottom div:first-child {
+.left div:first-child,
+.right div:first-child {
   font-size: 25px;
 }
