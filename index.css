@@ -1,0 +1,42 @@
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 2em;
+}
+
+a:link,
+a:visited {
+  color: #9cdcf0;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  color: #ce9164;
+}
+
+ol {
+  display: inline-block;
+  padding: 0 3em;
+  font-size: 0.9em;
+}
+
+li {
+  padding: 0.4em 1.2em 0.4em 0.4em;
+  color: #cccccc;
+}
+
+li:hover,
+li:hover > a:link,
+li:has(a:hover) {
+  color: #4dbd91;  
+}
+
+li > a:link,
+li > a:visited {
+  color: #cccccc;
+}
