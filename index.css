@@ -36,6 +36,10 @@ li:has(a:hover) {
   color: #4dbd91;  
 }
 
+li > a:hover {
+  color: #4dbd91;  
+}
+
 li > a:link,
 li > a:visited {
   color: #cccccc;
