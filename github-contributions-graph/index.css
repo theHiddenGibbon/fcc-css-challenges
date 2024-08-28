@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d1116;
+}
+
+:root {
+  --graph-bg: #000;
+  --default-square-bg: #161b22;
+  --level3: darkblue;
+  --level5: blue;
+  --level10: lightskyblue;
+  --box-size: 12px;
+  --gap-size: 6px;
+}
+
+.graph-container {
+  display: grid;
+  justify-items: center;
+  background-color: var(--graph-bg);
+  overflow-x: auto;
+}
+
+.graph {
+  display: grid;
+  grid-template-columns: repeat(52, var(--box-size));
+  gap: var(--gap-size);
+  margin: 50px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.square {
+  height: var(--box-size);
+  width: var(--box-size);
+  border-radius: 10%;
+  background-color: var(--default-square-bg);
+  margin: var(--gap-size);
+}
+
+.square[data-value="3"] {
+  background-color: var(--level3);
+}
+.square[data-value="5"] {
+  background-color: var(--level5);
+}
+.square[data-value="10"] {
+  background-color: var(--level10);
+}
