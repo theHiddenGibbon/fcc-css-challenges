@@ -33,6 +33,7 @@ li {
 li:hover,
 li:hover > a:link,
 li:hover > a:hover,
+li:hover > a:visited,
 li:has(a:hover) {
   color: #4dbd91;  
 }
